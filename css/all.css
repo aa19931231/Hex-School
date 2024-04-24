@@ -138,9 +138,11 @@ table {
     width: 1024px;
     margin: 0 auto;
 }
-body{
+
+body {
     font-family: "Microsoft JhengHei";
 }
+
 a {
     text-decoration: none;
 }
@@ -510,18 +512,17 @@ header {
     line-height: 1.5;
 }
 
-.outline th {
-    background: #ebebeb;
-    text-align: left;
-    font-weight: bold;
-    padding: 15px 450px 10px 30px;
-}
-
 .outline td {
     font-weight: bold;
-    color: #9b9b9b;
     padding: 15px 450px 10px 30px;
 }
+.outline tr{
+    background: #ebebeb;
+}
+tr:nth-of-type(2n) {
+    background: white;
+    color: #9b9b9b;
+  }
 
 .course-signUp a {
     background: #00cc99;
