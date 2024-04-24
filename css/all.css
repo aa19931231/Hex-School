@@ -1,0 +1,679 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+body{
+    font-family: "Microsoft JhengHei";
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(95, 95, 95, 0.5);
+    position: absolute;
+    width: 98%;
+    top: -1px;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.logo a {
+    background-image: url("/images/logo.png");
+    width: 182px;
+    height: 36px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.logo span {
+    margin: 5px 0 0 40px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00cc99;
+    padding: 30px;
+    border-bottom: 5px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: 5px solid #00cc99;
+}
+
+.arrow::after {
+    content: '→';
+    padding-left: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #323228;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu a {
+    margin: 10px;
+}
+
+.footer span {
+    color: #9b9b9b;
+    font-size: 15px;
+
+}
+
+.fb a {
+    background-image: url("/images/fb.png");
+    width: 35px;
+    height: 35px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.tw a {
+    background-image: url("/images/tw.png");
+    width: 34px;
+    height: 35px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.ig a {
+    background-image: url("/images/ig.png");
+    width: 35px;
+    height: 35px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.content-title {
+    display: flex;
+    align-items: end;
+    margin: 50px 0px 20px 10px;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00cc99;
+}
+
+.content-title span {
+    font-size: 18px;
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+
+.content-title a {
+    margin-left: 570px;
+    padding: 5px 10px;
+    color: #00cc99;
+    background: white;
+    border: 2px solid #00cc99;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.content-title a:hover {
+    color: white;
+    background: #00cc99;
+}
+
+/*///////index///////*/
+
+.index-title {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.index-title h1,
+.index-title span {
+    font-size: 45px;
+    font-weight: bold;
+    color: #00cc99;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.index-title span {
+    color: white;
+}
+
+.index-title a {
+    background: #00cc99;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.index-title a:hover {
+    background: white;
+    color: #00cc99;
+}
+
+.course {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.course-item {
+    width: 300px;
+    padding: 15px 10px;
+    box-shadow: 0 2px 3px rgb(158, 158, 158);
+    border-radius: 5px;
+}
+
+.course-item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.course-item p {
+    color: #9b9b9b;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.compare table {
+    margin: 0 auto;
+    width: 98%;
+}
+
+.compare th,
+.compare td {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.compare th {
+    background: #ebebeb;
+}
+
+.focus {
+    color: #00cc99;
+}
+
+.signUp {
+    display: flex;
+    align-items: center;
+    background: #ebebeb;
+    padding: 60px 0px 60px 50px;
+}
+
+.signUp h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.signUp form {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0px 0px 100px;
+}
+
+.signUp input {
+    border-radius: 5px;
+    border: none;
+    width: 400px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.signUp textarea {
+    border-radius: 5px;
+    border: none;
+    width: 400px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.signUp form .send {
+    background: #00cc99;
+    color: white;
+    width: 120px;
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin-left: auto;
+    text-indent: 10px;
+}
+
+.signUp form .send:hover {
+    background: white;
+    color: #00cc99;
+    cursor: pointer;
+}
+
+.course-title {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+/*////////course//////*/
+
+
+.course-title h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.course-title span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00cc99;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.course-title a {
+    background: #00cc99;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.course-title a:hover {
+    background: white;
+    color: #00cc99;
+}
+
+.teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 200px;
+}
+
+.teacher h3 {
+    font-size: 35px;
+    color: #00cc99;
+    line-height: 1.2;
+}
+
+.teacher span {
+    color: black;
+}
+
+.teacher ul li {
+    list-style: disc;
+    line-height: 1.2;
+    text-indent: 12px;
+}
+
+.advantage,
+.outline {
+    margin-left: 210px;
+    margin-bottom: 50px;
+}
+
+.advantage-title,
+.outline-title {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.advantage h3,
+.outline h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00cc99;
+}
+
+.advantage span,
+.outline span {
+    font-size: 18px;
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+
+.advantage li {
+    list-style: decimal;
+    margin-left: 18px;
+    width: 560px;
+    padding-left: 15px;
+}
+
+.advantage p {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.outline th {
+    background: #ebebeb;
+    text-align: left;
+    font-weight: bold;
+    padding: 15px 450px 10px 30px;
+}
+
+.outline td {
+    font-weight: bold;
+    color: #9b9b9b;
+    padding: 15px 450px 10px 30px;
+}
+
+.course-signUp a {
+    background: #00cc99;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 50px 0 0 50px;
+}
+
+.course-signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ebebeb;
+    padding: 125px 0px 125px 50px;
+}
+
+.course-signUp h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+/*//////qa///////*/
+.qa-title {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    text-align: center;
+}
+
+.qa-title h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.qa-title span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00cc99;
+}
+
+.search {
+    width: 500px;
+    display: flex;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 300px;
+    right: 270px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.qa-content {
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.qa-content-title {
+    display: flex;
+    align-items: flex-end;
+    margin: 30px 0 25px 15px;
+}
+
+.qa-content h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.qa-content h5 {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.qa-content p {
+    color: #9b9b9b;
+    font-weight: bold;
+}
+
+.qa-content-title h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00cc99;
+}
+
+.qa-content-title span {
+    font-size: 18px;
+    color: #9b9b9b;
+    margin-left: 5px;
+}
+
+.qa-content li {
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.payment,
+.refund {
+    margin-left: 25px;
+}
+
+.payment li {
+    color: #9b9b9b;
+    font-weight: bold;
+    list-style: decimal;
+    line-height: 0.2;
+    text-indent: 15px;
+}
+
+.refund li {
+    color: #9b9b9b;
+    font-weight: bold;
+    list-style: disc;
+    line-height: 0.2;
+    text-indent: 15px;
+}
+
+.refund-details {
+    margin-left: 45px;
+}
+
+.refund-details li {
+    color: #9b9b9b;
+    font-weight: bold;
+    list-style: disc;
+    text-indent: 15px;
+}
+
+.email {
+    color: #00cc99;
+}
