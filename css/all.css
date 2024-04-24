@@ -161,7 +161,7 @@ header {
 }
 
 .logo a {
-    background-image: url("/images/logo.png");
+    background-image: url("../images/logo.png");
     width: 182px;
     height: 36px;
     display: block;
@@ -219,7 +219,7 @@ header {
 }
 
 .fb a {
-    background-image: url("/images/fb.png");
+    background-image: url("../images/fb.png");
     width: 35px;
     height: 35px;
     display: block;
@@ -229,7 +229,7 @@ header {
 }
 
 .tw a {
-    background-image: url("/images/tw.png");
+    background-image: url("../images/tw.png");
     width: 34px;
     height: 35px;
     display: block;
@@ -239,7 +239,7 @@ header {
 }
 
 .ig a {
-    background-image: url("/images/ig.png");
+    background-image: url("../images/ig.png");
     width: 35px;
     height: 35px;
     display: block;
